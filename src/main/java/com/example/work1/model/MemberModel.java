@@ -34,9 +34,9 @@ public class MemberModel implements Serializable{
 	private String firstname ;
 	@NotBlank
 	private String lastname ;
-	@NotBlank
+
 	private String username ;
-	@NotNull
+
 	private Integer password ;
 	
 	@Column(nullable=false,updatable=false)
@@ -98,5 +98,6 @@ public class MemberModel implements Serializable{
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
+
 
 }
